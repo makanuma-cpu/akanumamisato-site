@@ -80,11 +80,12 @@ body {
 .link-arrow { color: var(--color-muted); font-size: 0.9rem; transition: transform 0.2s; }
 .link-item:hover .link-arrow { transform: translateX(4px); }
 
-.footer { background: #fff; border-top: 1px solid var(--color-border); padding: 48px 24px; text-align: center; }
+.footer { background: #fff; padding: 48px 24px; text-align: center; }
 .footer-sns { display: flex; justify-content: center; gap: 32px; margin-bottom: 16px; }
 .footer-sns a { color: var(--color-text); text-decoration: none; font-size: 1rem; letter-spacing: 0.06em; transition: color 0.2s; }
 .footer-sns a:hover { color: #5BB8E8; }
 .footer-copy { font-size: 0.72rem; color: var(--color-muted); letter-spacing: 0.06em; }
+
 
 @media (max-width: 600px) {
   .hero { padding: 52px 20px; }
