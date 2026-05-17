@@ -1,4 +1,4 @@
-.top-line { height: 4px; background: #5BB8E8; }
+.top-line { height: 8px; background: #5BB8E8; }
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
