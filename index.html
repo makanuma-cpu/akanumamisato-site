@@ -28,26 +28,26 @@
           <p class="site-subtitle">赤沼美里 オフィシャルサイト</p>
         </div>
       </a>
-      <div class="header-right"></div>
     </div>
   </header>
 
   <nav class="site-nav">
-    <ul>
-      <li class="current"><a href="#top">トップ</a></li>
-      <li><a href="#about">プロフィール</a></li>
-      <li><a href="#activities">メディア実績</a></li>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul id="nav-menu">
+      <li><a href="#top" onclick="closeMenu()">トップ</a></li>
+      <li><a href="#about" onclick="closeMenu()">プロフィール</a></li>
+      <li><a href="#activities" onclick="closeMenu()">メディア実績</a></li>
       <li><a href="https://note.com/iflab_education/" target="_blank">note</a></li>
-      <li><a href="#links">公式メルマガ</a></li>
+      <li><a href="#links" onclick="closeMenu()">公式メルマガ</a></li>
       <li class="has-dropdown">
         <a href="#">SNS ▾</a>
         <div class="dropdown">
           <a href="https://note.com/iflab_education/" target="_blank">note</a>
           <a href="https://www.facebook.com/misato.akanuma" target="_blank">Facebook</a>
-          <a href="https://www.instagram.com/misatoakanuma/" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Instagram</a>
         </div>
       </li>
-      <li><a href="https://iflab.education">フリースクールIFラボ</a></li>
+      <li><a href="#links" onclick="closeMenu()">フリースクールIFラボ</a></li>
     </ul>
   </nav>
 </div>
@@ -127,6 +127,17 @@
   </div>
   <p class="footer-copy">&copy; AKANUMA Misato. All rights reserved.</p>
 </footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', function() {
+    navMenu.classList.toggle('open');
+  });
+  function closeMenu() {
+    navMenu.classList.remove('open');
+  }
+</script>
 
 </body>
 </html>
