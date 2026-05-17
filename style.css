@@ -37,11 +37,11 @@ body {
 .header-sns a { color: var(--color-muted); transition: color 0.2s; display: flex; align-items: center; }
 .header-sns a:hover { color: var(--color-text); }
 
-.site-nav { background: #5BB8E8; position: sticky; top: 0; z-index: 100; }
-.site-nav ul { max-width: 1000px; margin: 0 auto; padding: 0 24px; list-style: none; display: flex; }
-.site-nav ul li a { display: block; padding: 14px 24px; font-size: 0.88rem; letter-spacing: 0.06em; color: #fff; text-decoration: none; transition: background 0.2s; }
-.site-nav ul li a:hover { background: rgba(255,255,255,0.2); }
-.site-nav ul li:first-child a { background: rgba(255,255,255,0.25); }
+.site-nav { background: #fff; border-bottom: 1px solid var(--color-border); position: sticky; top: 0; z-index: 100; }
+.site-nav ul li + li { border-left: 1px solid var(--color-border); }
+.site-nav ul li a { display: block; padding: 14px 20px; font-size: 0.85rem; letter-spacing: 0.06em; color: var(--color-text); text-decoration: none; transition: color 0.2s; }
+.site-nav ul li a:hover { color: #5BB8E8; }
+.site-nav ul li:first-child a { color: #5BB8E8; }
 
 .hero { padding: 80px 24px 72px; text-align: center; border-bottom: 1px solid var(--color-border); }
 .hero-inner { max-width: 700px; margin: 0 auto; }
