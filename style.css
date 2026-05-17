@@ -72,6 +72,7 @@ body { background: var(--color-bg); color: var(--color-text); font-family: var(-
 .footer-copy { font-size: 0.72rem; color: var(--color-muted); letter-spacing: 0.06em; }
 
 @media (max-width: 600px) {
+  .site-nav { border-bottom: none; }
   .hamburger { display: block; }
   .site-nav ul { display: none; flex-direction: column; padding: 0; }
   .site-nav ul.open { display: flex; }
