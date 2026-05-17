@@ -85,8 +85,12 @@ body {
 #links { border-bottom: none; }
 
 @media (max-width: 600px) {
-  .section { padding: 52px 0; }
+  .site-header { padding: 10px 0; }
+  .site-title { font-size: 1.2rem; letter-spacing: 0.06em; }
+  .site-subtitle { font-size: 0.65rem; margin-top: 2px; }
+  .site-nav ul { overflow-x: auto; justify-content: flex-start; }
+  .site-nav ul li a { padding: 10px 14px; white-space: nowrap; font-size: 0.8rem; }
+  .section { padding: 40px 0; }
   .card-grid { grid-template-columns: 1fr; }
-  .site-nav ul { overflow-x: auto; }
-  .site-nav ul li a { padding: 12px 16px; white-space: nowrap; }
+  .profile-photo img { width: 160px; height: 160px; }
 }
