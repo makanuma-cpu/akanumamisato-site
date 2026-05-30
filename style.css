@@ -50,9 +50,13 @@ body { background: var(--color-bg); color: var(--color-text); font-family: var(-
 .profile-photo img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; display: block; margin: 0 auto; }
 .profile-body p { font-size: 0.95rem; line-height: 2.1; }
 
-.activities-intro { font-size: 0.9rem; color: var(--color-muted); margin-bottom: 28px; }
-.activities-intro a { color: #5BB8E8; text-decoration: none; }
-.activities-intro a:hover { text-decoration: underline; }
+.article-list { list-style: none; margin-bottom: 40px; }
+.article-item { padding: 16px 0; border-bottom: 1px solid var(--color-border); }
+.article-item:first-child { border-top: 1px solid var(--color-border); }
+.article-title { font-size: 0.92rem; line-height: 1.7; margin-bottom: 4px; }
+.article-url { font-size: 0.82rem; color: #5BB8E8; text-decoration: none; display: block; margin-bottom: 2px; }
+.article-url:hover { text-decoration: underline; }
+.article-meta { font-size: 0.82rem; color: var(--color-muted); }
 
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .card { background: #fff; border: 1px solid var(--color-border); padding: 28px 22px; }
