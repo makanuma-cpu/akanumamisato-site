@@ -4,147 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>赤沼美里 | AKANUMA Misato</title>
-  <meta name="description" content="一般社団法人フリースクールIFラボ代表理事・医療ライター・ABAペアレントトレーナー・認定心理士">
+  <meta name="description" content="赤沼美里 オフィシャルサイト">
   <meta property="og:title" content="赤沼美里 | AKANUMA Misato">
-  <meta property="og:description" content="一般社団法人フリースクールIFラボ代表理事・医療ライター・ABAペアレントトレーナー・認定心理士">
+  <meta property="og:description" content="赤沼美里 オフィシャルサイト">
   <meta property="og:url" content="https://akanumamisato.com">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ヘッダー -->
+<div class="top-line"></div>
+
+<div class="sticky-top">
   <header class="site-header">
     <div class="header-inner">
-      <div class="header-logo">
-        <div class="logo-box">AM</div>
-        <div class="logo-text">
-          <p class="logo-name-en">AKANUMA Misato</p>
-          <p class="logo-name-ja">赤沼美里 オフィシャルサイト</p>
+      <a href="https://akanumamisato.com" style="text-decoration: none; color: inherit;">
+        <div class="header-center">
+          <h1 class="site-title">AKANUMA MISATO</h1>
+          <p class="site-subtitle">赤沼美里 オフィシャルサイト</p>
         </div>
-      </div>
-      <div class="header-sns">
-        <a href="https://note.com/iflab_education/" target="_blank" rel="noopener" aria-label="note">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </a>
-        <a href="https://www.facebook.com/misato.akanuma" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-      </div>
+      </a>
     </div>
   </header>
 
-  <!-- ナビゲーション -->
   <nav class="site-nav">
-    <ul>
-      <li><a href="#top">トップ</a></li>
-      <li><a href="#about">プロフィール</a></li>
-      <li><a href="#activities">活動</a></li>
-      <li><a href="#links">SNS・リンク</a></li>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul id="nav-menu">
+      <li><a href="#top" onclick="closeMenu()">トップ</a></li>
+      <li><a href="#about" onclick="closeMenu()">プロフィール</a></li>
+      <li><a href="#activities" onclick="closeMenu()">メディア実績</a></li>
+      <li><a href="https://note.com/iflab_education/" target="_blank">note</a></li>
+      <li><a href="#links" onclick="closeMenu()">公式メルマガ</a></li>
+      <li class="has-dropdown">
+        <a href="#">SNS ▾</a>
+        <div class="dropdown">
+          <a href="https://note.com/iflab_education/" target="_blank">note</a>
+          <a href="https://www.facebook.com/misato.akanuma" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </li>
+      <li><a href="https://iflab.education" onclick="closeMenu()">フリースクールIFラボ</a></li>
     </ul>
   </nav>
+</div>
 
-  <main id="top">
+<main id="top">
 
-    <!-- ヒーロー -->
-    <section class="hero">
-      <div class="hero-inner">
-        <h1 class="hero-name">赤沼 美里</h1>
-        <p class="hero-en">AKANUMA Misato</p>
-        <div class="hero-roles">
-          <span>一般社団法人フリースクールIFラボ 代表理事</span>
-          <span class="sep">｜</span>
-          <span>医療ライター</span>
-          <span class="sep">｜</span>
-          <span>ABAペアレントトレーナー</span>
-          <span class="sep">｜</span>
-          <span>認定心理士</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- プロフィール -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section-title">プロフィール</h2>
-        <p class="about-text">
-          わが子が小1の5月に学校に行けなくなってしまい、フリースクールに通い元気を取り戻したのをきっかけに<strong>フリースクールIFラボ</strong>を設立し、現在10年目。医療ライターとして発達特性の解説記事も執筆。ADHDの当事者・支援者・当事者の親という3つの視点で延べ<strong>100家族</strong>を支援。
-        </p>
-        <dl class="profile-list">
-          <div class="profile-row">
-            <dt>学歴</dt>
-            <dd>筑波大学卒業 / 東京大学大学院修了</dd>
-          </div>
-          <div class="profile-row">
-            <dt>資格</dt>
-            <dd>認定心理士 / ABAペアレントトレーナー</dd>
-          </div>
-          <div class="profile-row">
-            <dt>支援実績</dt>
-            <dd>延べ100家族以上</dd>
-          </div>
-          <div class="profile-row">
-            <dt>IFラボ設立</dt>
-            <dd>現在10年目</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- 活動 -->
-    <section class="section section-gray" id="activities">
-      <div class="container">
-        <h2 class="section-title">活動</h2>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-icon">🏫</div>
-            <h3>フリースクールIFラボ</h3>
-            <p>不登校・発達障害のある子どもたちの居場所づくりと学び直しの場を10年にわたり運営。</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">✍️</div>
-            <h3>医療ライター</h3>
-            <p>発達特性（ADHD・ASDなど）をわかりやすく伝える解説記事を執筆・監修。</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">👨‍👩‍👧</div>
-            <h3>ABAペアレントトレーニング</h3>
-            <p>応用行動分析（ABA）をもとに、保護者が子どもへの関わり方を学ぶ支援プログラムを提供。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SNS・リンク -->
-    <section class="section" id="links">
-      <div class="container">
-        <h2 class="section-title">SNS・リンク</h2>
-        <div class="link-list">
-          <a href="https://note.com/iflab_education/" target="_blank" rel="noopener" class="link-item">
-            <span class="link-icon">📝</span>
-            <span class="link-label">note — IFラボ</span>
-            <span class="link-arrow">→</span>
-          </a>
-          <a href="https://www.facebook.com/misato.akanuma" target="_blank" rel="noopener" class="link-item">
-            <span class="link-icon">📘</span>
-            <span class="link-label">Facebook</span>
-            <span class="link-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
+  <section class="section" id="about">
     <div class="container">
-      <p class="footer-name">赤沼 美里 / AKANUMA Misato</p>
-      <p class="footer-copy">&copy; 2025 Misato Akanuma. All rights reserved.</p>
+      <h2 class="section-title">プロフィール</h2>
+      <div class="profile-body">
+        <div class="profile-photo">
+          <img src="profile_pic.jpg" alt="赤沼美里">
+        </div>
+        <p>わが子の不登校を経験した母であり、ADHD当事者。その当事者性を原点に、発達障害や特性のある子どもたちも含めた「学校になじめない子が楽しく学べる」インクルーシブな学び場を10年かけてつくり続けてきた。</p>
+        <br>
+        <p>大学院修了後は、国際NGOの広報・支援者サービスに携わる。子どもが生まれてからは医療ライターとして論文執筆の協力などを行ってきた。しかし高1になる息子が小1の4月に不登校を経験。6月にフリースクールに在籍してから、学校になじまない子どもたちの居場所がほとんどないことを痛感。その年の10月に「居場所」だけにとどまらない学びを提供する「フリースクールIFラボ」を設立した。2026年10月に10年目を迎える。</p>
+        <br>
+        <p>「居場所」としてのフリースクールが主流であるなか、IFラボでは毎週「添削のない楽しい作文」授業をはじめ、プロジェクト学習のカリキュラムを独自につくって運営している。模擬裁判・動物との共生・好きなものプレゼン・北海道旅行に向けたアイヌ探求・ショート映画づくり・吉祥寺探検など、子どもたちの好奇心が学びの出発点になっている。</p>
+        <br>
+        <p>医療ライターとしても、発達障害ポータルサイトや育児マンガへの解説コラムを執筆。秋田書店の漫画サイト「souffle」では数年にわたって人気記事上位を独占することもあった。不登校新聞でも不登校当事者へのインタビュー記事を執筆。</p>
+        <br>
+        <p>子どもたちの学び支援だけでなく、母親支援も積極的に行っている。応用行動分析学を活用した「ABAペアレントトレーニング」をはじめ、「不安講座」や「至らないと思ってしまう自分に寄り添う会」などを開催。子どもが不登校でも発達障害があっても、まず母親が「自分らしく自分の人生を生きる」ことを大切にしている。</p>
+        <br>
+        <p>好奇心への多動という恩恵により、多趣味。フルートのほか、近年は弾き語りに挑戦中。50歳デビューを弾き語りの先生とともに目指している。</p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="section section-gray" id="activities">
+    <div class="container">
+      <h2 class="section-title">メディア実績・活動</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🏫</div>
+          <h3>フリースクールIFラボ</h3>
+          <p>カリキュラムのあるフリースクールとして、のべ100名の子どもたちにインクルーシブな学びの場を提供。2026年10月に10年目を迎える。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✍️</div>
+          <h3>医療ライター</h3>
+          <p>発達障害ポータルサイト・秋田書店「souffle」・不登校新聞など、発達特性に関する記事を多数執筆。人気記事上位を独占した実績も。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👨‍👩‍👧</div>
+          <h3>ABAペアレントトレーニング</h3>
+          <p>応用行動分析学をもとに、子育てに悩む母親向けの支援プログラムを提供。「不安講座」「自分に寄り添う会」なども開催。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="links">
+    <div class="container">
+      <h2 class="section-title">SNS・リンク</h2>
+      <div class="link-list">
+        <a href="https://note.com/iflab_education/" target="_blank" rel="noopener" class="link-item">
+          <span class="link-icon">📝</span>
+          <span class="link-label">note — IFラボ</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.facebook.com/misato.akanuma" target="_blank" rel="noopener" class="link-item">
+          <span class="link-icon">📘</span>
+          <span class="link-label">Facebook</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-sns">
+    <a href="https://note.com/iflab_education/" target="_blank" rel="noopener"><i class="fa-solid fa-note-sticky"></i> note</a>
+    <a href="https://www.facebook.com/misato.akanuma" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <p class="footer-copy">&copy; AKANUMA Misato. All rights reserved.</p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', function() {
+    navMenu.classList.toggle('open');
+  });
+  function closeMenu() {
+    navMenu.classList.remove('open');
+  }
+</script>
 
 </body>
 </html>
